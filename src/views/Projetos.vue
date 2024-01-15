@@ -1,6 +1,7 @@
 <template>
-  <div class="box has-text-weight-bold">
-    <slot></slot>
+  <div class="projetos">
+    <h1 class="title">Projetos</h1>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -8,12 +9,12 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "TaskBox",
+  name: "TaskProjetos",
 });
 </script>
 
 <style scoped>
-.box {
-  background: #faf0ca;
+.projetos {
+  padding: 1.25rem;
 }
 </style>
