@@ -13,7 +13,7 @@
     {
       "id": "1",
       "duracaoEmSegundos": 120,
-      "descricao": "Configuração do ambiente",
+      "descricao": "Configuração do ambiente 4",
       "projeto": {
         "id": 1,
         "nome": "Alura tracker 3.0"
@@ -31,7 +31,7 @@
     {
       "id": "19d5",
       "duracaoEmSegundos": 3,
-      "descricao": "Tarefa 2 ",
+      "descricao": "Tarefa 3",
       "projeto": {
         "id": "1",
         "nome": "Alura tracker 3.0  "
