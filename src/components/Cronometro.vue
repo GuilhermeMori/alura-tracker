@@ -6,7 +6,8 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "TaskCronometro",
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: "Cronometro",
   props: {
     tempoEmSegundos: {
       type: Number,

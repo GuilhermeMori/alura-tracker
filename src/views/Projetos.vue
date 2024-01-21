@@ -9,7 +9,8 @@
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  name: "TaskProjetos",
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: "Projetos",
 });
 </script>
 

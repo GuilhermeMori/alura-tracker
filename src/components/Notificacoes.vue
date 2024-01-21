@@ -20,7 +20,8 @@ import { useStore } from "@/store";
 import { TipoNotificacao } from "@/interfaces/INotificacao";
 
 export default defineComponent({
-  name: "TaskNotificacoes",
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: "Notificacoes",
   data() {
     return {
       contexto: {

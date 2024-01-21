@@ -1,12 +1,10 @@
 <template>
   <header>
     <h1>
-      <img alt="Alura Tracker" src="../assets/logo.png" />
+      <img alt="Alura Tracker" src="../assets/logo.png">
     </h1>
     <div class="has-text-centered">
-      <button class="button" @click="alterarModo">
-        Ativar modo {{ textoBtn }}
-      </button>
+      <button class="button" @click="alterarModo">Ativar modo {{ textoBtn }}</button>
     </div>
     <nav class="panel mt-5">
       <ul>
@@ -32,23 +30,23 @@ import { defineComponent } from "vue";
 
 export default defineComponent({
   name: "BarraLateral",
-  emits: ["aoAlterarModo"],
-  data() {
+  emits: ['aoAlterarModo'],
+  data () {
     return {
-      modoEscuro: false,
-    };
+      modoEscuro: false
+    }
   },
   methods: {
-    alterarModo(): void {
-      this.modoEscuro = !this.modoEscuro;
-      this.$emit("aoAlterarModo", this.modoEscuro);
-    },
+    alterarModo () : void {
+      this.modoEscuro = !this.modoEscuro
+      this.$emit('aoAlterarModo', this.modoEscuro)
+    }
   },
   computed: {
-    textoBtn(): string {
-      return this.modoEscuro ? "claro" : "escuro";
-    },
-  },
+    textoBtn () : string {
+      return this.modoEscuro ? 'claro' : 'escuro'
+    }
+  }
 });
 </script>
 <style scoped>
@@ -76,9 +74,9 @@ header {
   color: #fff;
 }
 .link:hover {
-  color: #faf0ca;
+  color: #FAF0CA;
 }
 .link.router-link-active {
-  color: #faf0ca;
+  color: #FAF0CA;
 }
 </style>

@@ -39,19 +39,21 @@
 <script lang="ts">
 import { useStore } from "@/store";
 import { computed, defineComponent } from "vue";
-import { EXCLUIR_PROJETO } from "@/store/tipo-mutacoes";
+import { OBTER_PROJETOS, REMOVER_PROJETO } from "@/store/tipo-acoes";
 
 export default defineComponent({
-  name: "TaskLista",
+  // eslint-disable-next-line vue/multi-word-component-names
+  name: "Lista",
   methods: {
     excluir(id: string) {
-      this.store.commit(EXCLUIR_PROJETO, id);
+      this.store.dispatch(REMOVER_PROJETO, id);
     },
   },
   setup() {
     const store = useStore();
+    store.dispatch(OBTER_PROJETOS);
     return {
-      projetos: computed(() => store.state.projetos),
+      projetos: computed(() => store.state.projeto.projetos),
       store,
     };
   },
